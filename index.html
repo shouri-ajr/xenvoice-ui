@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>XenVoice</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container-fluid top-bar">
+<div class="container">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Xenvoice"></a>
+      </div>
+      <ul class="top-bar-right">
+            <li>
+                
+                    <div class="dropdown">
+                            <a class="dropdown-toggle" type="button" data-toggle="dropdown">Dashboard
+                            <span class="caret"></span></a>
+                            <!-- <ul class="dropdown-menu">
+                              <li><a href="#">Profile</a></li>
+                              <li><a href="#">options</a></li>
+                              <li><a href="#">Account</a></li>
+                            </ul> -->
+                          </div>
+            
+            
+            </li>
+            <li>
+                    <div class="dropdown">
+                            <a class="dropdown-toggle" type="button" data-toggle="dropdown">Settings
+                            <span class="caret"></span></a>
+                            <!-- <ul class="dropdown-menu">
+                              <li><a href="#">Profile</a></li>
+                              <li><a href="#">options</a></li>
+                              <li><a href="#">Account</a></li>
+                            </ul> -->
+                          </div>
+            </li>
+            <li class="profile-pic">
+                <img src="images/profile.png" alt="">
+            </li>
+          </ul>
+
+</div>
+</div>
+<nav class="navigation">
+        <div class="container">
+            <div class="row">
+                <nav class="nav-part text-center">
+                    <ul>
+                        <li>
+                            <a href=""><i class="fas fa-phone-volume"></i> <span>Voice</span> </a>
+                        </li>
+                        <li>
+                            <a href=""><i class="far fa-play-circle"></i> <span>Video</span> </a>
+                        </li>
+                        <li>
+                            <a href=""><i class="far fa-envelope"></i> <span>Message</span> </a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fas fa-fax"></i> <span>Fax</span> </a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fas fa-desktop"></i> <span>ScreenShare</span> </a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fas fa-ellipsis-h"></i> <span>More</span> </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </nav>
+<div class="container">
+    <div class="row">
+            <!-- LEFT NAVIGATION START-->
+            <div class="col-sm-2 padding-left">
+                <nav class="left-nav">
+                    <ul class="list-group">
+                        <a href="#" class="list-group-item active">All</a>
+                        <a href="#" class="list-group-item"><i class="fas fa-phone-volume"></i>Voice</a>
+                        <a href="#" class="list-group-item"><i class="fas fa-video"></i>Video</a>
+                        <a href="#" class="list-group-item"><i class="fas fa-desktop"></i>Screen share</a>
+                        <a href="#" class="list-group-item"><i class="far fa-envelope"></i>Message</a>
+                        <a href="#" class="list-group-item"><i class="fas fa-phone-volume"></i>Remote access</a>
+                        <a href="#" class="list-group-item"><i class="far fa-bell"></i>Notifications</a>
+                        <a href="#" class="list-group-item"><i class="fas fa-globe"></i>Co-browser</a>
+                    </ul>
+                </nav>
+            </div>
+<!-- LEFT NAVIGATION END-->
+<div class="col-sm-10 padding-right">
+        <div id="exTab2" class="bg-white">	
+            <ul class="nav nav-tabs">
+                        <li class="active">
+                    <a  href="#overview" data-toggle="tab">Overview</a>
+                        </li>
+                        <li><a href="#withoutclearfix" data-toggle="tab">Without clearfix</a>
+                        </li>
+                        <li><a href="#solution" data-toggle="tab">Solution</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content ">
+                        <div id="overview" class="tab-pane fade in active">
+                            <div class="buy-number-section bg-white">
+                                    <div class="col-sm-6"> 
+                                        <h2>
+                                            9898988898
+                                        </h2> 
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group has-feedback has-search">
+                                            <span id="search-icon" class="glyphicon glyphicon-search form-control-feedback"></span>
+                                            <input type="text" class="form-control" placeholder="Search">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2 filter-button">
+                                            <button type="button" class="btn btn-default">
+                                                <span class="glyphicon glyphicon-glass"></span> Filter
+                                            </button>
+                                        </div>
+                                    <div class="bs-example bg-white ">
+                                        <table class="table table-hover table-responsive">
+                                            <thead >
+                                                <tr>
+                                                    <th>From</th>
+                                                    <th>To</th>
+                                                    <th>Date</th>
+                                                    <th>Time</th>
+                                                    <th>Duration</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td data-toggle="modal" data-target="#myModal">9898988898</td>
+                                                    <td>10254</td>
+                                                    <td>6 August</td>
+                                                    <td>05:40:52 PM</td>
+                                                    <td>00:05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9898988898</td>
+                                                    <td>10254</td>
+                                                    <td>6 August</td>
+                                                    <td>05:40:52 PM</td>
+                                                    <td>00:05</td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>9898988898</td>
+                                                    <td>10254</td>
+                                                    <td>6 August</td>
+                                                    <td>05:40:52 PM</td>
+                                                    <td>00:05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9898988898</td>
+                                                    <td>10254</td>
+                                                    <td>6 August</td>
+                                                    <td>05:40:52 PM</td>
+                                                    <td>00:05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9898988898</td>
+                                                    <td>10254</td>
+                                                    <td>6 August</td>
+                                                    <td>05:40:52 PM</td>
+                                                    <td>00:05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9898988898</td>
+                                                    <td>10254</td>
+                                                    <td>6 August</td>
+                                                    <td>05:40:52 PM</td>
+                                                    <td>00:05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9898988898</td>
+                                                    <td>10254</td>
+                                                    <td>6 August</td>
+                                                    <td>05:40:52 PM</td>
+                                                    <td>00:05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9898988898</td>
+                                                    <td>10254</td>
+                                                    <td>6 August</td>
+                                                    <td>05:40:52 PM</td>
+                                                    <td>00:05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9898988898</td>
+                                                    <td>10254</td>
+                                                    <td>6 August</td>
+                                                    <td>05:40:52 PM</td>
+                                                    <td>00:05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9898988898</td>
+                                                    <td>10254</td>
+                                                    <td>6 August</td>
+                                                    <td>05:40:52 PM</td>
+                                                    <td>00:05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9898988898</td>
+                                                    <td>10254</td>
+                                                    <td>6 August</td>
+                                                    <td>05:40:52 PM</td>
+                                                    <td>00:05</td>
+                                                </tr>
+                                             </tbody>
+                                         </table>
+                                    </div>
+                                </div><!--/span-->
+                    </div>
+                    <div id="withoutclearfix" class="tab-pane fade in ">
+                            <div class="buy-number-section bg-white">
+                                    <div class="col-sm-6"> 
+                                            <h2>
+                                                    123455677
+                                            </h2>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group has-feedback has-search">
+                                            <span id="search-icon" class="glyphicon glyphicon-search form-control-feedback"></span>
+                                            <input type="text" class="form-control" placeholder="Search">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2 filter-button">
+                                            <button type="button" class="btn btn-default">
+                                                <span class="glyphicon glyphicon-glass"></span> Filter
+                                            </button>
+                                        </div>
+                                    <div class="bs-example bg-white ">
+                                        <table class="table table-hover table-responsive">
+                                            <thead >
+                                                <tr>
+                                                    <th>From</th>
+                                                    <th>To</th>
+                                                    <th>Date</th>
+                                                    <th>Time</th>
+                                                    <th>Duration</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>9898988898</td>
+                                                    <td>10254</td>
+                                                    <td>6 August</td>
+                                                    <td>05:40:52 PM</td>
+                                                    <td>00:05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9898988898</td>
+                                                    <td>10254</td>
+                                                    <td>6 August</td>
+                                                    <td>05:40:52 PM</td>
+                                                    <td>00:05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9898988898</td>
+                                                    <td>10254</td>
+                                                    <td>6 August</td>
+                                                    <td>05:40:52 PM</td>
+                                                    <td>00:05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9898988898</td>
+                                                    <td>10254</td>
+                                                    <td>6 August</td>
+                                                    <td>05:40:52 PM</td>
+                                                    <td>00:05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9898988898</td>
+                                                    <td>10254</td>
+                                                    <td>6 August</td>
+                                                    <td>05:40:52 PM</td>
+                                                    <td>00:05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9898988898</td>
+                                                    <td>10254</td>
+                                                    <td>6 August</td>
+                                                    <td>05:40:52 PM</td>
+                                                    <td>00:05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9898988898</td>
+                                                    <td>10254</td>
+                                                    <td>6 August</td>
+                                                    <td>05:40:52 PM</td>
+                                                    <td>00:05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9898988898</td>
+                                                    <td>10254</td>
+                                                    <td>6 August</td>
+                                                    <td>05:40:52 PM</td>
+                                                    <td>00:05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9898988898</td>
+                                                    <td>10254</td>
+                                                    <td>6 August</td>
+                                                    <td>05:40:52 PM</td>
+                                                    <td>00:05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9898988898</td>
+                                                    <td>10254</td>
+                                                    <td>6 August</td>
+                                                    <td>05:40:52 PM</td>
+                                                    <td>00:05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9898988898</td>
+                                                    <td>10254</td>
+                                                    <td>6 August</td>
+                                                    <td>05:40:52 PM</td>
+                                                    <td>00:05</td>
+                                                </tr>
+                                             </tbody>
+                                         </table>
+                                    </div>
+                                </div><!--/span-->
+                    </div>
+                    <div id="solution" class="tab-pane fade in ">
+                            <div class="buy-number-section bg-white">
+                                    <div class="col-sm-6"> 
+                                            <h2>
+                                                 987654321
+                                            </h2>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group has-feedback has-search">
+                                            <span id="search-icon" class="glyphicon glyphicon-search form-control-feedback"></span>
+                                            <input type="text" class="form-control" placeholder="Search">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2 filter-button">
+                                            <button type="button" class="btn btn-default">
+                                                <span class="glyphicon glyphicon-glass"></span> Filter
+                                            </button>
+                                        </div>
+                                    <div class="bs-example bg-white ">
+                                        <table class="table table-hover table-responsive">
+                                            <thead >
+                                                <tr>
+                                                    <th>From</th>
+                                                    <th>To</th>
+                                                    <th>Date</th>
+                                                    <th>Time</th>
+                                                    <th>Duration</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>9898988898</td>
+                                                    <td>10254</td>
+                                                    <td>6 August</td>
+                                                    <td>05:40:52 PM</td>
+                                                    <td>00:05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9898988898</td>
+                                                    <td>10254</td>
+                                                    <td>6 August</td>
+                                                    <td>05:40:52 PM</td>
+                                                    <td>00:05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9898988898</td>
+                                                    <td>10254</td>
+                                                    <td>6 August</td>
+                                                    <td>05:40:52 PM</td>
+                                                    <td>00:05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9898988898</td>
+                                                    <td>10254</td>
+                                                    <td>6 August</td>
+                                                    <td>05:40:52 PM</td>
+                                                    <td>00:05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9898988898</td>
+                                                    <td>10254</td>
+                                                    <td>6 August</td>
+                                                    <td>05:40:52 PM</td>
+                                                    <td>00:05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9898988898</td>
+                                                    <td>10254</td>
+                                                    <td>6 August</td>
+                                                    <td>05:40:52 PM</td>
+                                                    <td>00:05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9898988898</td>
+                                                    <td>10254</td>
+                                                    <td>6 August</td>
+                                                    <td>05:40:52 PM</td>
+                                                    <td>00:05</td>
+                                                </tr>
+                                               
+                                                <tr>
+                                                    <td>9898988898</td>
+                                                    <td>10254</td>
+                                                    <td>6 August</td>
+                                                    <td>05:40:52 PM</td>
+                                                    <td>00:05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9898988898</td>
+                                                    <td>10254</td>
+                                                    <td>6 August</td>
+                                                    <td>05:40:52 PM</td>
+                                                    <td>00:05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9898988898</td>
+                                                    <td>10254</td>
+                                                    <td>6 August</td>
+                                                    <td>05:40:52 PM</td>
+                                                    <td>00:05</td>
+                                                </tr>
+                                             </tbody>
+                                         </table>
+                                    </div>
+                                </div><!--/span-->
+                    </div>
+        </div>
+</div>
+    </div>
+</div>
+</div>
+
+<!-- MODAL START-->
+<div class="modal fade table-modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel" id="myModal">
+<div class="modal-dialog" role="document">
+	<div class="modal-content">
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<h4 class="modal-title" id="gridSystemModalLabel">9192055934</h4>
+	</div>
+	<div class="modal-body">
+		
+		<div class="form-group">
+			<label for="name-field">Name</label>
+			<input type="text" class="form-control" id="name-field" placeholder="Name goes here">
+		</div>
+		<div class="form-group">
+			<label for="description-field">Description</label>
+			<textarea class="form-control" id="description-field">Some description foes here</textarea>
+		</div>
+		<hr class="hr-divider">
+		<div class="form-group">
+			<label for="notify-field" class="notify-label"><strong>Emails for notifying voicemails:</strong></label>
+			<div class="input-group">
+				<input type="text" class="form-control" id="notify-field">
+				<span class="input-group-btn">
+					<button class="btn btn-primary" type="button">Add</button>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-primary save-button">Save</button>
+		<button type="button" class="btn btn-default" data-dismiss="modal">Release Number</button>
+	</div>
+	</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- MODAL END-->
+
+
+<!-- scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

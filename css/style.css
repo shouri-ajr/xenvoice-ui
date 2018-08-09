@@ -1,0 +1,204 @@
+body{
+    background-color: #fbfbfb;
+}
+ul li{
+    list-style-type: none;
+}
+.top-bar{
+    background-color: #282f39;
+    color: #fff;
+}
+a.dropdown-toggle {
+    color: #fff;
+    cursor: pointer;
+  }
+.top-bar-right{
+    float: right;
+    transform: translateY(60%);
+}
+.top-bar-right > li{
+    display: inline-block;
+    margin-right: 20px;
+ }
+.top-bar-right li a{
+    line-height: 
+};
+span.profile-icon {
+    max-width: 30px;
+    height: auto;
+}
+.theme-color{
+    background-color: #ffcc00;
+}
+.white-font{
+    color: #fff;
+}
+/*navigation*/
+.nav-part {
+    background: #fff;
+    box-shadow: 0px 0px 3px #dfdff1;
+    padding: 10px 0px 5px;
+    margin: 10px 0px;
+}
+.nav-part li{
+    display: inline-block;
+    padding: 5px 20px;
+}
+.profile-pic img{
+    max-width: 25px;
+ }
+.nav-part li a{
+    display: block;
+    text-decoration: none;
+    color:#333;
+}
+.nav-part li a i {
+    padding: 12px 5px;
+    border: 1px solid rgba(255, 204, 0, 1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.nav-part li a:hover i {
+    background-color: rgba(255, 204, 0, 1);
+}
+.btn-info, .btn-info:hover{
+    background: rgba(255, 204, 0, 1);
+    border-color:rgba(255, 204, 0, 1);
+}
+.nav-part li a span {
+    display: block;
+    font-size: 13px;
+}
+
+.buy-number-section {
+    box-shadow: 1px 1px 2px #DDE;
+    margin: 10px 0px;
+    padding: 10px 0px 5px 0px;
+}
+.buy-number-section h2 {
+    font-size: 22px;
+    margin: 0px 0px;
+    padding: 5px 0px;
+}
+.buy-number-section th{
+    
+}
+.padding-left {
+    padding-left:0px;
+}
+.padding-right{
+    padding-right:0px;
+}
+/* leftnav*/
+
+    .left-nav .list-group{
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.08);
+        -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.08);
+    }
+    .left-nav .list-group-item{
+    padding: 10px 20px;
+    border: 1px solid #ececec;
+    font-size: 13px;
+    }
+    .left-nav .list-group-item:first-child{
+    padding: 10px 20px 10px 50px;
+    }
+    .left-nav .list-group-item i {
+    margin: 0 16px 0 0;
+    width: 12px;
+    }
+    .list-group-item.active{
+        background-color: rgba(255, 204, 0, 1);
+        border:0;
+    }
+    .list-group-item.active:hover{
+        background-color: rgba(255, 204, 0, 1);
+            }
+/*table*/
+.navbar-inverse{background:#282F39}
+.table > thead > tr > th {border-bottom: none;background: #F8F8F8;}
+.table > tbody > tr > td{ border-color:#f8f8f8; }
+#search-icon { position: absolute; right:auto; }
+.form-control{ text-indent:15px }
+.filter-button{ text-align:center; }
+.filter-button .btn-default, .filter-button .btn-default:hover{ background:transparent; }
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus {
+	color: #000;
+	cursor: default;
+	background-color: #fff;
+	border: 0;
+	/* border-bottom-color: transparent; */
+	border-bottom: 2px solid #FFCC00;
+}
+.nav-tabs > li.active > a:hover{ border:none ; border-bottom: 2px solid #FFCC00; }
+.nav > li > a,.nav > li > a:hover{ background:none ; border:0; color:#000;}
+#exTab2{margin-bottom:5px; }
+.bg-white{
+    background-color: #fff;
+}
+.table-modal .modal-dialog{
+	width: 400px;
+}
+.table-modal .modal-content{
+	border-radius: 0;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+.table-modal .modal-header {
+    padding: 7px 20px;
+    border-bottom: none;
+    background: #eee;
+}
+.table-modal .modal-title {
+    font-size: 16px;
+    color: #444;
+}
+.table-modal .modal-body {
+    padding: 20px 20px;
+}
+.table-modal label{
+	font-weight: normal;
+}
+.notify-label{
+	font-size: 16px;
+    margin: 0 0 14px;
+}
+.table-modal .modal-footer {
+    padding: 10px 20px 20px;
+    border-top: none;
+	text-align: center;
+}
+.table-modal .modal-header .close {
+    margin-top: 10px;
+	font-size: 29px;
+    font-weight: normal;
+    line-height: 0;
+}
+.hr-divider{
+	margin: 34px 0 24px;
+}
+.save-button{
+	width: 120px;
+}
+.modal-backdrop{
+    background-color: transparent;
+}
+.table-modal.modal.fade .modal-dialog{
+    top: 50%;
+    right: 80px;
+    position: absolute;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+.table-modal.modal.in .modal-dialog {
+    -webkit-transform: translate(-10%, -50%);
+    -ms-transform: translate(-10%, -50%);
+    -o-transform: translate(-10%, -50%);
+    transform: translate(-10%, -50%);
+}
+.table-modal .form-control{
+    text-indent: 0;
+}
