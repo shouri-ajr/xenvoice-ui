@@ -1,6 +1,15 @@
 body{
     background-color: #fbfbfb;
 }
+a:hover{
+    text-decoration: none;
+}
+.navbar-brand{
+padding:5px 0 0 0;
+}
+.navbar-brand>img{
+    max-height:40px;
+}
 ul li{
     list-style-type: none;
 }
@@ -186,7 +195,8 @@ ul.breadcrumb li a {
 	font-weight: normal;
 }
 .breadcrumb>li+li:before{
-    content: "\f054";
+    content: "\f0da";
+    display: inline-block;
     font-family: "Font Awesome 5 Free";
 }
 .notify-label{
