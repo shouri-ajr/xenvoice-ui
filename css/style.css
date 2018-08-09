@@ -195,9 +195,9 @@ ul.breadcrumb li a {
 	font-weight: normal;
 }
 .breadcrumb>li+li:before{
-    content: "\f0da";
-    display: inline-block;
-    font-family: "Font Awesome 5 Free";
+    content: "\003e";
+    font-weight:400;
+    color:#333;
 }
 .notify-label{
 	font-size: 16px;
