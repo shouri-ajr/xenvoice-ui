@@ -1,6 +1,9 @@
 body{
     background-color: #fbfbfb;
 }
+.btn:focus, .btn:active{
+    outline: none !important;
+}
 a:hover{
     text-decoration: none;
 }
@@ -181,10 +184,15 @@ ul.breadcrumb li a {
 .btn-info{
     color:#333;
 }
-.btn-primary {
+.btn-primary, .btn-primary:hover {
     color: #333;
     background-color: #ffcc00;
     border-color: #ffcc00;
+}
+.btn-primary:focus, .btn-primary:active {
+    color: #fff;
+    background-color: #d1d1d1 !important;
+    border-color: #d1d1d1 !important;
 }
 .left-nav .list-group-item.active,.left-nav  .list-group-item.active:focus,.left-nav .list-group-item.active:hover{
     color:#333;
@@ -226,7 +234,7 @@ ul.breadcrumb li a {
 }
 .table-modal.modal.fade .modal-dialog{
     top: 50%;
-    right: 80px;
+    right: 65px;
     position: absolute;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -241,4 +249,10 @@ ul.breadcrumb li a {
 }
 .table-modal .form-control{
     text-indent: 0;
+}
+.buy-number td{
+    width:25%;
+}
+.buy-number td:first-child, .buy-number th:first-child{
+    padding-left:4%;
 }
