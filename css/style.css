@@ -87,7 +87,6 @@ span.profile-icon {
 
 .buy-number-section {
     box-shadow: 1px 1px 2px #DDE;
-    margin: 10px 0px;
     padding: 10px 0px 5px 0px;
 }
 .buy-number-section h2 {
@@ -177,6 +176,7 @@ ul.breadcrumb {
     background: none;
     padding-left: 0px;
     color: #333;
+    margin-bottom:10px;
 }
 ul.breadcrumb li a {
     color: #333;
