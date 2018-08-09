@@ -1,5 +1,6 @@
 body{
     background-color: #fbfbfb;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .btn:focus, .btn:active{
     outline: none !important;
@@ -21,6 +22,7 @@ ul li{
     color: #fff;
     z-index: 1;
     position: relative;
+    margin-bottom: 15px;
 }
 a.dropdown-toggle {
     color: #fff;
@@ -52,7 +54,7 @@ span.profile-icon {
     background: #fff;
     box-shadow: 0px 0px 3px #dfdff1;
     padding: 10px 0px 5px;
-    margin: 10px 0px;
+    margin: 0px 0px 10px 0px;
 }
 .nav-part li{
     display: inline-block;
@@ -84,10 +86,10 @@ span.profile-icon {
     display: block;
     font-size: 13px;
 }
-
+.buy-number-section .filter-button{ text-align:right;}
 .buy-number-section {
     box-shadow: 1px 1px 2px #DDE;
-    padding: 10px 0px 5px 0px;
+    padding: 15px 0px 5px 0px;
 }
 .buy-number-section h2 {
     font-size: 18px;
@@ -185,14 +187,14 @@ ul.breadcrumb li a {
     color:#333;
 }
 .btn-primary, .btn-primary:hover {
-    color: #333;
+    color: #333333!important;
     background-color: #ffcc00;
     border-color: #ffcc00;
 }
 .btn-primary:focus, .btn-primary:active {
-    color: #fff;
-    background-color: #d1d1d1 !important;
-    border-color: #d1d1d1 !important;
+    color: #333;
+    background-color: #ffcc00 !important;
+    border-color: #ffcc00 !important;
 }
 .left-nav .list-group-item.active,.left-nav  .list-group-item.active:focus,.left-nav .list-group-item.active:hover{
     color:#333;
@@ -202,7 +204,7 @@ ul.breadcrumb li a {
     cursor: pointer;
 }
 .table-modal label{
-	font-weight: normal;
+	/* font-weight: normal; */
 }
 .breadcrumb>li+li:before{
     content: "\003e";
@@ -210,8 +212,8 @@ ul.breadcrumb li a {
     color:#333;
 }
 .notify-label{
-	font-size: 16px;
-    margin: 0 0 14px;
+	/* font-size: 16px; */
+	/* margin: 0 0 14px; */
 }
 .table-modal .modal-footer {
     padding: 10px 20px 20px;
@@ -256,3 +258,6 @@ ul.breadcrumb li a {
 .buy-number td:first-child, .buy-number th:first-child{
     padding-left:4%;
 }
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{background-color: #ffcc00;
+    border-color: #ffcc00;}
