@@ -42,7 +42,7 @@ span.profile-icon {
 }
 .nav-part li{
     display: inline-block;
-    padding: 5px 20px;
+    padding: 5px 10px;
 }
 .profile-pic img{
     max-width: 25px;
@@ -77,9 +77,10 @@ span.profile-icon {
     padding: 10px 0px 5px 0px;
 }
 .buy-number-section h2 {
-    font-size: 22px;
+    font-size: 18px;
+    font-weight: 600;
     margin: 0px 0px;
-    padding: 5px 0px;
+    padding: 5px 15px 10px;
 }
 .buy-number-section th{
     
@@ -153,12 +154,40 @@ span.profile-icon {
 .table-modal .modal-title {
     font-size: 16px;
     color: #444;
+    font-weight: 600;
 }
 .table-modal .modal-body {
     padding: 20px 20px;
 }
+ul.breadcrumb {
+    background: none;
+    padding-left: 0px;
+    color: #333;
+}
+ul.breadcrumb li a {
+    color: #333;
+}
+.btn-info{
+    color:#333;
+}
+.btn-primary {
+    color: #333;
+    background-color: #ffcc00;
+    border-color: #ffcc00;
+}
+.left-nav .list-group-item.active,.left-nav  .list-group-item.active:focus,.left-nav .list-group-item.active:hover{
+    color:#333;
+}
+.table-hover>tbody>tr:hover {
+    background-color: #ffcc0059;
+    cursor: pointer;
+}
 .table-modal label{
 	font-weight: normal;
+}
+.breadcrumb>li+li:before{
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
 }
 .notify-label{
 	font-size: 16px;
@@ -170,10 +199,9 @@ span.profile-icon {
 	text-align: center;
 }
 .table-modal .modal-header .close {
-    margin-top: 10px;
 	font-size: 29px;
     font-weight: normal;
-    line-height: 0;
+    line-height: 25px;
 }
 .hr-divider{
 	margin: 34px 0 24px;
