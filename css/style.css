@@ -36,6 +36,11 @@ a.dropdown-toggle {
     display: inline-block;
     margin-right: 20px;
  }
+
+.top-bar-right li a{
+    line-height: normal;
+}
+
 span.profile-icon {
     max-width: 30px;
     height: auto;
