@@ -61,6 +61,8 @@ span.profile-icon {
 .nav-part li{
     display: inline-block;
     padding: 5px 10px;
+    min-width: 90px;
+    text-align: center;
 }
 .profile-pic img{
     max-width: 25px;
@@ -264,3 +266,168 @@ ul.breadcrumb li a {
 
 .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{background-color: #ffcc00;
     border-color: #ffcc00;}
+
+/*loding spinner*/
+.loding-blck-text {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.xv-circle {
+    margin: 40px auto 15px auto;
+    width: 60px;
+    height: 60px;
+    position: relative;
+  }
+  .xv-circle .xv-child {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .xv-circle .xv-child:before {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 15%;
+    height: 15%;
+    background-color: #ffbc00;
+    border-radius: 100%;
+    -webkit-animation: xv-circleBounceDelay 1.2s infinite ease-in-out both;
+    animation: xv-circleBounceDelay 1.2s infinite ease-in-out both;
+  }
+  .xv-circle .xv-circle2 {
+    -webkit-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+            transform: rotate(30deg); }
+  .xv-circle .xv-circle3 {
+    -webkit-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+            transform: rotate(60deg); }
+  .xv-circle .xv-circle4 {
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg); }
+  .xv-circle .xv-circle5 {
+    -webkit-transform: rotate(120deg);
+        -ms-transform: rotate(120deg);
+            transform: rotate(120deg); }
+  .xv-circle .xv-circle6 {
+    -webkit-transform: rotate(150deg);
+        -ms-transform: rotate(150deg);
+            transform: rotate(150deg); }
+  .xv-circle .xv-circle7 {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }
+  .xv-circle .xv-circle8 {
+    -webkit-transform: rotate(210deg);
+        -ms-transform: rotate(210deg);
+            transform: rotate(210deg); }
+  .xv-circle .xv-circle9 {
+    -webkit-transform: rotate(240deg);
+        -ms-transform: rotate(240deg);
+            transform: rotate(240deg); }
+  .xv-circle .xv-circle10 {
+    -webkit-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+            transform: rotate(270deg); }
+  .xv-circle .xv-circle11 {
+    -webkit-transform: rotate(300deg);
+        -ms-transform: rotate(300deg);
+            transform: rotate(300deg); }
+  .xv-circle .xv-circle12 {
+    -webkit-transform: rotate(330deg);
+        -ms-transform: rotate(330deg);
+            transform: rotate(330deg); }
+  .xv-circle .xv-circle2:before {
+    -webkit-animation-delay: -1.1s;
+            animation-delay: -1.1s; }
+  .xv-circle .xv-circle3:before {
+    -webkit-animation-delay: -1s;
+            animation-delay: -1s; }
+  .xv-circle .xv-circle4:before {
+    -webkit-animation-delay: -0.9s;
+            animation-delay: -0.9s; }
+  .xv-circle .xv-circle5:before {
+    -webkit-animation-delay: -0.8s;
+            animation-delay: -0.8s; }
+  .xv-circle .xv-circle6:before {
+    -webkit-animation-delay: -0.7s;
+            animation-delay: -0.7s; }
+  .xv-circle .xv-circle7:before {
+    -webkit-animation-delay: -0.6s;
+            animation-delay: -0.6s; }
+  .xv-circle .xv-circle8:before {
+    -webkit-animation-delay: -0.5s;
+            animation-delay: -0.5s; }
+  .xv-circle .xv-circle9:before {
+    -webkit-animation-delay: -0.4s;
+            animation-delay: -0.4s; }
+  .xv-circle .xv-circle10:before {
+    -webkit-animation-delay: -0.3s;
+            animation-delay: -0.3s; }
+  .xv-circle .xv-circle11:before {
+    -webkit-animation-delay: -0.2s;
+            animation-delay: -0.2s; }
+  .xv-circle .xv-circle12:before {
+    -webkit-animation-delay: -0.1s;
+            animation-delay: -0.1s; }
+  
+  @-webkit-keyframes xv-circleBounceDelay {
+    0%, 80%, 100% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    } 40% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+  @keyframes xv-circleBounceDelay {
+    0%, 80%, 100% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    } 40% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+/*loding spinner end*/
+
+.no-record {
+    background-color: #fcf8e2;
+    padding: 15px;
+    text-align: center;
+    font-size: 22px;
+    color: #8b6e37;
+    font-weight: 500;
+    border: 1px solid #fbf3d9;
+    margin-bottom: 10px;
+}
+
+/*custom scroll bar*/
+.datascrollbar {
+    height: 350px;
+    overflow-y: scroll;
+}
+
+.datascrollbar-overflow {
+    min-height: 450px;
+}
+
+#scrollbar::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+} 
+
+#scrollbar::-webkit-scrollbar-thumb {
+    background-color: #282f39;
+}
+
+#scrollbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+/*custom scroll bar end*/
