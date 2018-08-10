@@ -194,17 +194,10 @@ ul.breadcrumb li a {
     background-color: #ffcc0059;
     cursor: pointer;
 }
-.table-modal label{
-	/* font-weight: normal; */
-}
 .breadcrumb>li+li:before{
     content: "\003e";
     font-weight:400;
     color:#333;
-}
-.notify-label{
-	/* font-size: 16px; */
-	/* margin: 0 0 14px; */
 }
 .table-modal .modal-footer {
     padding: 10px 20px 20px;
@@ -214,7 +207,12 @@ ul.breadcrumb li a {
 .table-modal .modal-header .close {
 	font-size: 29px;
     font-weight: normal;
-    line-height: 25px;
+    line-height: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 19px 12px;
+    z-index: 1;
 }
 .hr-divider{
 	margin: 34px 0 24px;
@@ -229,7 +227,7 @@ ul.breadcrumb li a {
 }
 .table-modal.modal.fade .modal-dialog{
     top: 50%;
-    right: 65px;
+    right: 0;
     position: absolute;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -237,13 +235,23 @@ ul.breadcrumb li a {
     transform: translate(0, -50%);
 }
 .table-modal.modal.in .modal-dialog {
-    -webkit-transform: translate(-10%, -50%);
-    -ms-transform: translate(-10%, -50%);
-    -o-transform: translate(-10%, -50%);
-    transform: translate(-10%, -50%);
+    -webkit-transform: translate(-4%, -50%);
+    -ms-transform: translate(-4%, -50%);
+    -o-transform: translate(-4%, -50%);
+    transform: translate(-4%, -50%);
 }
 .table-modal .form-control{
     text-indent: 0;
+}
+.table-modal{
+    position: absolute;
+}
+.modal-open {
+    overflow: auto !important;
+    padding-right: 0 !important;
+}
+.modal-open .container{
+    position: relative;
 }
 .buy-number td{
     width:25%;
