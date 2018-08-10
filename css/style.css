@@ -97,15 +97,7 @@ span.profile-icon {
     margin: 0px 0px;
     padding: 5px 15px 10px;
 }
-.buy-number-section th{
-    
-}
-.padding-left {
-    padding-left:0px;
-}
-.padding-right{
-    padding-right:0px;
-}
+
 /* leftnav*/
 
     .left-nav .list-group{
@@ -229,6 +221,11 @@ ul.breadcrumb li a {
 .modal-backdrop{
     background-color: transparent;
 }
+.buy-number-section:after {
+    content: '';
+    display: block;
+    clear: both;
+}
 .table-modal.modal.fade .modal-dialog{
     top: 50%;
     right: 0;
@@ -260,8 +257,8 @@ ul.breadcrumb li a {
 .buy-number td{
     width:25%;
 }
-.buy-number td:first-child, .buy-number th:first-child{
-    padding-left:4%;
+.buy-number-button {
+    margin-bottom: 12px;
 }
 
 .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{background-color: #ffcc00;
