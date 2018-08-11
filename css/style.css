@@ -151,22 +151,25 @@ span.profile-icon {
 .table-modal .modal-dialog{
 	width: 400px;
 }
-.table-modal .modal-content{
+.video-call-modal .modal-dialog{
+	width: 500px;
+}
+.table-modal .modal-content, .video-call-modal .modal-content{
 	border-radius: 0;
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
 }
-.table-modal .modal-header {
+.table-modal .modal-header, .video-call-modal .modal-header {
     padding: 7px 20px;
     border-bottom: none;
     background: #eee;
 }
-.table-modal .modal-title {
+.table-modal .modal-title, .video-call-modal .modal-title{
     font-size: 16px;
     color: #444;
     font-weight: 600;
 }
-.table-modal .modal-body {
+.table-modal .modal-body, .video-call-modal .modal-body{
     padding: 20px 20px;
 }
 ul.breadcrumb {
@@ -208,7 +211,11 @@ ul.breadcrumb li a {
     border-top: none;
 	text-align: center;
 }
-.table-modal .modal-header .close {
+.video-call-modal .modal-footer {
+    padding: 10px 20px 20px;
+    border-top: none;
+}
+.table-modal .modal-header .close, .video-call-modal .modal-header .close{
 	font-size: 29px;
     font-weight: normal;
     line-height: 0;
@@ -217,6 +224,8 @@ ul.breadcrumb li a {
     top: 0;
     padding: 19px 12px;
     z-index: 1;
+    filter: alpha(opacity=40);
+    opacity: 0.4;
 }
 .hr-divider{
 	margin: 34px 0 24px;
@@ -229,7 +238,7 @@ ul.breadcrumb li a {
     display: block;
     clear: both;
 }
-.table-modal.modal.fade .modal-dialog{
+.table-modal.modal.fade .modal-dialog, .video-call-modal.modal.fade .modal-dialog{
     top: 50%;
     right: 0;
     position: absolute;
@@ -238,16 +247,16 @@ ul.breadcrumb li a {
     -o-transform: translate(0, -50%);
     transform: translate(0, -50%);
 }
-.table-modal.modal.in .modal-dialog {
+.table-modal.modal.in .modal-dialog, .video-call-modal.modal.in .modal-dialog{
     -webkit-transform: translate(-4%, -50%);
     -ms-transform: translate(-4%, -50%);
     -o-transform: translate(-4%, -50%);
     transform: translate(-4%, -50%);
 }
-.table-modal .form-control{
+.table-modal .form-control, .video-call-modal .form-control{
     text-indent: 0;
 }
-.table-modal{
+.table-modal, .video-call-modal{
     position: absolute;
 }
 .modal-open {
@@ -431,3 +440,52 @@ ul.breadcrumb li a {
     background-color: #F5F5F5;
 }
 /*custom scroll bar end*/
+/*Video call modal start*/
+#share-field, #invite-field{
+    border-radius:4px; 
+}
+#share-field + span, #invite-field + span{
+    padding: 0 0 0 16px;
+}
+#share-field + span button, #invite-field + span button{
+    border-radius:4px; 
+    color: #888;
+}
+#invite-field + span button.plus-icon{
+    font-size: 30px;
+    line-height: 20px;
+}
+.invite-someone-text{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 30px 0;
+}
+.people-tag {
+    font-size: 15px;
+    color: #777;
+    display: inline-block;
+    position: relative;
+    padding: 0 32px 0 12px;
+    line-height: 26px;
+    margin: 0 0 6px;
+}
+.people-tag a {
+    font-size: 24px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    color: #888;
+    line-height: 26px;
+}
+.people-tag a:focus{
+    text-decoration: none;
+}
+.video-call-modal .modal-header .close.minus{
+    right: 34px;
+}
+/*Video call modal end*/
