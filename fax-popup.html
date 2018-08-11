@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>XenVoice</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+  .UplaodSection{background:#eaeaea; border:2px dashed #666; border-radius:5px; padding:20px 0;}
+  .col-centered{ text-align:center;   float: none;   margin: 0 auto;}
+  .col-sm-6.separater {border-right: 1px solid #ccc;min-height: 110px;}
+   .btn-bs-file{
+    position:relative;
+}
+.btn-bs-file input[type="file"]{
+    position: absolute;
+    top: -9999999;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    width:0;
+    height:0;
+    outline: none;
+    cursor: inherit;
+}
+.Document-list{ margin:25px 0 0 0; padding:0; text-align:left; }
+.Document-list li{ display:inline-block; width:100px; font-size:12px; min-height:120px; margin:0 15px; }
+.imageArea{ height:120px; width:100px; border:1px solid #ccc; border-radius:3px; display:block; transition:all; -moz-transition:0.3s linear; -webkit-transition:0.3s linear; -o-transition:0.3s linear; -ms-transition:0.3s linear;} 
+.Document-list li:hover .imageArea{ border-color:#ffcc00;} 
+.actionTitle{ visibility:hidden; }
+.Document-list li:hover .actionTitle{ visibility:visible; }
+  
+</style>
+</head>
+<body>
+
+    <div class="container-fluid top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                <a class="navbar-brand" href="#"><img src="images/xenvoice-logo.png" alt="Xenvoice" /></a>
+                <ul class="top-bar-right">
+                    <li>
+                        
+                            <div class="dropdown">
+                                    <a class="dropdown-toggle" type="button" data-toggle="dropdown">Dashboard
+                                    <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">Profile</a></li>
+                                      <li><a href="#">options</a></li>
+                                      <li><a href="#">Account</a></li>
+                                    </ul>
+                                  </div>
+                    
+                    
+                    </li>
+                    <li>
+                            <div class="dropdown">
+                                    <a class="dropdown-toggle" type="button" data-toggle="dropdown">Settings
+                                    <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">Profile</a></li>
+                                      <li><a href="#">options</a></li>
+                                      <li><a href="#">Account</a></li>
+                                    </ul>
+                                  </div>
+                    </li>
+                    <li class="profile-pic">
+                        <img src="images/profile.png" alt="">
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
+        
+        </div>
+        </div>
+<nav class="navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <nav class="nav-part text-center">
+                        <ul>
+                            <li>
+                                <a href=""><i class="fas fa-phone-volume"></i> <span>Voice</span> </a>
+                            </li>
+                            <li>
+                                <a href=""><i class="far fa-play-circle"></i> <span>Video</span> </a>
+                            </li>
+                            <li>
+                                <a href=""><i class="far fa-envelope"></i> <span>Message</span> </a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fas fa-fax"></i> <span>Fax</span> </a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fas fa-desktop"></i> <span>Screen Share</span> </a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fas fa-ellipsis-h"></i> <span>More</span> </a>
+                            </li>
+                        </ul>
+                    </nav>
+					
+    <div class="buy-number-section bg-white">
+         <div class="col-sm-4">
+				<div class="form-group">
+					<label for="name-field">From</label>
+					<input type="text" class="form-control" id="name-field" placeholder="Name goes here">
+				</div>
+				<div class="form-group">
+					<label for="name-field">to</label>
+					<div class="input-group">
+						<input id="email" type="text" class="form-control" name="email" placeholder="Email"><span class="input-group-addon">+</span>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="name-field">Email</label>
+					<div class="input-group">
+						<input id="email" type="text" class="form-control" name="email" placeholder="Email"><span class="input-group-addon">+</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-7 col-sm-offset-1">
+					<div class="col-sm-12  col-centered UplaodSection">
+						<div class="col-sm-6 separater">
+							<label class="btn-bs-file btn btn-primary">
+								Upload Files
+								<input type="file" />
+							</label>
+						</div>
+						<div class="col-sm-6">
+							<span>Drop your files Here.</span>
+						</div>
+						<div class="clearfix"></div>
+					</div>                    
+					<div class="col-sm-12  col-centered">
+						<ul class="Document-list">
+							<li>
+								<span>AJR-document.pdf</span>
+								<!-- <img src=""> -->
+								<span class="imageArea"></span>
+								<span class="actionTitle">Edit & Signature</span>
+							</li>
+							<li>
+								<span>AJR-document.pdf</span>
+								<!-- <img src=""> -->
+								<span class="imageArea"></span>
+								<span class="actionTitle">Edit & Signature</span>
+							</li>
+							<li>
+								<span>AJR-document.pdf</span>
+								<!-- <img src=""> -->
+								<span class="imageArea"></span>
+								<span class="actionTitle">Edit & Signature</span>
+							</li>
+							<li>
+								<span>AJR-document.pdf</span>
+								<!-- <img src=""> -->
+								<span class="imageArea"></span>
+								<span class="actionTitle">Edit & Signature</span>
+							</li>
+							
+						</ul>
+						
+						<div class="col-sm-12  text-right">
+							<button type="button" class="btn btn-primary btn-md">
+								Send
+							</button>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+      		</div>
+        
+
+
+        </div>
+    
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+<!-- scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
