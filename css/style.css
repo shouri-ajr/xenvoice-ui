@@ -1,5 +1,5 @@
 body{
-    background-color: #f3f3f3;
+  /*  background-color: #f3f3f3; */
     font-family: 'Source Sans Pro', sans-serif;
 }
 .btn:focus, .btn:active{
@@ -54,7 +54,7 @@ span.profile-icon {
 /*navigation*/
 .nav-part {
     background: #fff;
-    box-shadow: 0px 0px 3px #dfdff1;
+   /* box-shadow: 0px 0px 3px #dfdff1; */
     padding: 10px 0px 5px;
     margin: 0px 0px 10px 0px;
 }
@@ -64,6 +64,9 @@ span.profile-icon {
     min-width: 90px;
     text-align: center;
 }
+.nav-part ul {
+    padding: 0px;
+}
 .profile-pic img{
     max-width: 25px;
  }
@@ -72,6 +75,7 @@ span.profile-icon {
     text-decoration: none;
     color:#333;
 }
+
 .nav-part li a i {
     padding: 12px 5px;
     border: 1px solid rgba(255, 204, 0, 1);
@@ -79,7 +83,7 @@ span.profile-icon {
     height: 40px;
     border-radius: 50%;
 }
-.nav-part li a:hover i {
+.nav-part li a:hover i, .nav-part li a.active i {
     background-color: rgba(255, 204, 0, 1);
 }
 .btn-info, .btn-info:hover{
@@ -92,14 +96,14 @@ span.profile-icon {
 }
 .buy-number-section .filter-button{ text-align:right;}
 .buy-number-section {
-    box-shadow: 1px 1px 2px #DDE;
+   /* box-shadow: 1px 1px 2px #DDE; */
     padding: 15px 0px 5px 0px;
 }
 .buy-number-section h2 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     margin: 0px 0px;
-    padding: 5px 15px 10px;
+    padding: 5px 0px 10px;
 }
 
 /* leftnav*/
@@ -119,6 +123,8 @@ span.profile-icon {
     margin: 0 16px 0 0;
     width: 12px;
     }
+    
+    .mejs-controls {background-image: none !important;}
     .list-group-item.active{
         background-color: rgba(255, 204, 0, 1);
         border:0;
@@ -128,8 +134,14 @@ span.profile-icon {
             }
 /*table*/
 .navbar-inverse{background:#282F39}
-.table > thead > tr > th {border-bottom: none;background: #F8F8F8;}
+.table > thead > tr > th {border-bottom: none;background: none;}
 .table > tbody > tr > td{ border-color:#f8f8f8; }
+.table > tbody > tr > td a{color:#333;}
+.table>tbody>tr>td span {
+    color: #999;
+    font-size: 11px;
+    display: block;
+}
 #search-icon { position: absolute; right:auto; }
 .form-control{ text-indent:15px }
 .filter-button{ text-align:center; }
@@ -151,22 +163,25 @@ span.profile-icon {
 .table-modal .modal-dialog{
 	width: 400px;
 }
-.table-modal .modal-content{
+.video-call-modal .modal-dialog{
+	width: 500px;
+}
+.table-modal .modal-content, .video-call-modal .modal-content{
 	border-radius: 0;
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
 }
-.table-modal .modal-header {
+.table-modal .modal-header, .video-call-modal .modal-header {
     padding: 7px 20px;
     border-bottom: none;
     background: #eee;
 }
-.table-modal .modal-title {
+.table-modal .modal-title, .video-call-modal .modal-title{
     font-size: 16px;
     color: #444;
     font-weight: 600;
 }
-.table-modal .modal-body {
+.table-modal .modal-body, .video-call-modal .modal-body{
     padding: 20px 20px;
 }
 ul.breadcrumb {
@@ -181,13 +196,25 @@ ul.breadcrumb li a {
 .btn-info{
     color:#333;
 }
+.btn-primary{
+    min-width: 100px;
+}
 .btn-primary, .btn-primary:hover {
     color: #333333!important;
     background-color: #ffcc00;
     border-color: #ffcc00;
 }
+.form-control{
+    box-shadow: none;
+}
+.form-control:focus{
+    outline:none;
+    border-color: #ddd;
+    box-shadow: none;
+}
 .btn-primary:focus, .btn-primary:active {
     color: #333;
+    outline: none;
     background-color: #ffcc00 !important;
     border-color: #ffcc00 !important;
 }
@@ -208,7 +235,11 @@ ul.breadcrumb li a {
     border-top: none;
 	text-align: center;
 }
-.table-modal .modal-header .close {
+.video-call-modal .modal-footer {
+    padding: 10px 20px 20px;
+    border-top: none;
+}
+.table-modal .modal-header .close, .video-call-modal .modal-header .close{
 	font-size: 29px;
     font-weight: normal;
     line-height: 0;
@@ -217,6 +248,8 @@ ul.breadcrumb li a {
     top: 0;
     padding: 19px 12px;
     z-index: 1;
+    filter: alpha(opacity=40);
+    opacity: 0.4;
 }
 .hr-divider{
 	margin: 34px 0 24px;
@@ -229,7 +262,7 @@ ul.breadcrumb li a {
     display: block;
     clear: both;
 }
-.table-modal.modal.fade .modal-dialog{
+.table-modal.modal.fade .modal-dialog, .video-call-modal.modal.fade .modal-dialog{
     top: 50%;
     right: 0;
     position: absolute;
@@ -238,16 +271,16 @@ ul.breadcrumb li a {
     -o-transform: translate(0, -50%);
     transform: translate(0, -50%);
 }
-.table-modal.modal.in .modal-dialog {
+.table-modal.modal.in .modal-dialog, .video-call-modal.modal.in .modal-dialog{
     -webkit-transform: translate(-4%, -50%);
     -ms-transform: translate(-4%, -50%);
     -o-transform: translate(-4%, -50%);
     transform: translate(-4%, -50%);
 }
-.table-modal .form-control{
+.table-modal .form-control, .video-call-modal .form-control{
     text-indent: 0;
 }
-.table-modal{
+.table-modal, .video-call-modal{
     position: absolute;
 }
 .modal-open {
@@ -261,7 +294,7 @@ ul.breadcrumb li a {
     width:25%;
 }
 .buy-number-button {
-    margin-bottom: 12px;
+    margin-bottom: 30px;
 }
 
 .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{background-color: #ffcc00;
@@ -431,6 +464,7 @@ ul.breadcrumb li a {
     background-color: #F5F5F5;
 }
 /*custom scroll bar end*/
+<<<<<<< HEAD
 
 /*chat popup*/
 .chat-container{
@@ -533,3 +567,54 @@ sidenav .modal{
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
    /* cursor: pointer;  Add a pointer on hover */
 }
+=======
+/*Video call modal start*/
+#share-field, #invite-field{
+    border-radius:4px; 
+}
+#share-field + span, #invite-field + span{
+    padding: 0 0 0 16px;
+}
+#share-field + span button, #invite-field + span button{
+    border-radius:4px; 
+    color: #888;
+}
+#invite-field + span button.plus-icon{
+    font-size: 30px;
+    line-height: 20px;
+}
+.invite-someone-text{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 30px 0;
+}
+.people-tag {
+    font-size: 15px;
+    color: #777;
+    display: inline-block;
+    position: relative;
+    padding: 0 32px 0 12px;
+    line-height: 26px;
+    margin: 0 0 6px;
+}
+.people-tag a {
+    font-size: 24px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    color: #888;
+    line-height: 26px;
+}
+.people-tag a:focus{
+    text-decoration: none;
+}
+.video-call-modal .modal-header .close.minus{
+    right: 34px;
+}
+/*Video call modal end*/
+>>>>>>> a7e307033e1fcc9dcb297d7999f84757bd7dc9c3
