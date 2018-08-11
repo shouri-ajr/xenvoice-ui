@@ -64,6 +64,9 @@ span.profile-icon {
     min-width: 90px;
     text-align: center;
 }
+.nav-part ul {
+    padding: 0px;
+}
 .profile-pic img{
     max-width: 25px;
  }
@@ -97,7 +100,7 @@ span.profile-icon {
     padding: 15px 0px 5px 0px;
 }
 .buy-number-section h2 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     margin: 0px 0px;
     padding: 5px 0px 10px;
@@ -131,7 +134,7 @@ span.profile-icon {
             }
 /*table*/
 .navbar-inverse{background:#282F39}
-.table > thead > tr > th {border-bottom: none;background: #F8F8F8;}
+.table > thead > tr > th {border-bottom: none;background: none;}
 .table > tbody > tr > td{ border-color:#f8f8f8; }
 .table > tbody > tr > td a{color:#333;}
 .table>tbody>tr>td span {
@@ -193,13 +196,25 @@ ul.breadcrumb li a {
 .btn-info{
     color:#333;
 }
+.btn-primary{
+    min-width: 100px;
+}
 .btn-primary, .btn-primary:hover {
     color: #333333!important;
     background-color: #ffcc00;
     border-color: #ffcc00;
 }
+.form-control{
+    box-shadow: none;
+}
+.form-control:focus{
+    outline:none;
+    border-color: #ddd;
+    box-shadow: none;
+}
 .btn-primary:focus, .btn-primary:active {
     color: #333;
+    outline: none;
     background-color: #ffcc00 !important;
     border-color: #ffcc00 !important;
 }
@@ -279,7 +294,7 @@ ul.breadcrumb li a {
     width:25%;
 }
 .buy-number-button {
-    margin-bottom: 12px;
+    margin-bottom: 30px;
 }
 
 .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{background-color: #ffcc00;
