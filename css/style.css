@@ -431,3 +431,105 @@ ul.breadcrumb li a {
     background-color: #F5F5F5;
 }
 /*custom scroll bar end*/
+
+/*chat popup*/
+.chat-container{
+    padding: 10px;
+}
+.chat-container::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.chat-reply{
+    border:1px solid #333;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.talk-bubble, .talk-bubble-right{
+    margin-bottom: 20px;
+    display: inline-block;
+    position: relative;
+    height: auto;
+} 
+.talk-bubble {
+    background-color:rgb(248, 248, 248);
+}
+.talk-bubble-right {
+    background-color:rgb(254, 239, 175);
+}
+.tri-right.left-top:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -20px;
+    right: auto;
+    top: 0px;
+    bottom: auto;
+    border: 22px solid;
+    border-color: rgb(248, 248, 248) transparent transparent transparent;
+}
+.tri-right.right-top:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: auto;
+    right: -20px;
+    top: 0px;
+    bottom: auto;
+    border: 20px solid;
+    border-color: rgb(254, 239, 175) transparent transparent transparent;
+}
+.talktext p{
+    padding: 10px;
+}
+.chat-bubble-left{
+   float: left;
+   width: 90%;
+}
+.chat-bubble-right{
+    float: right;
+    width: 90%;
+ }
+ .chat-bubble-left .chat-time,  .chat-bubble-right .chat-time{
+     text-align: right;
+     margin-bottom: 10px;
+ }
+/*slide popup*/
+sidenav .modal{
+    display: block;
+}
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0;
+    z-index: 3;
+    /* background-color: #111;  */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+   /* cursor: pointer;  Add a pointer on hover */
+}
