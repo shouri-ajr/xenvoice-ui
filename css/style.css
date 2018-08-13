@@ -163,6 +163,11 @@ span.profile-icon {
 .table-modal .modal-dialog{
 	width: 400px;
 }
+.modal-dialog.chat-modal{
+    width:550px;
+
+}
+
 .video-call-modal .modal-dialog{
 	width: 500px;
 }
@@ -464,12 +469,12 @@ ul.breadcrumb li a {
     background-color: #F5F5F5;
 }
 /*custom scroll bar end*/
-<<<<<<< HEAD
 
 /*chat popup*/
 .chat-container{
     padding: 10px;
 }
+
 .chat-container::after{
     content: '';
     display: block;
@@ -567,7 +572,6 @@ sidenav .modal{
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
    /* cursor: pointer;  Add a pointer on hover */
 }
-=======
 /*Video call modal start*/
 #share-field, #invite-field{
     border-radius:4px; 
@@ -617,4 +621,3 @@ sidenav .modal{
     right: 34px;
 }
 /*Video call modal end*/
->>>>>>> a7e307033e1fcc9dcb297d7999f84757bd7dc9c3
