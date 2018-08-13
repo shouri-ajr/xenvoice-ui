@@ -228,16 +228,14 @@
 
 <!-- scripts -->
 <script>
-    function openNav() {
-    document.getElementById("myModal").style.width = "auto";
-    document.getElementById("myModal").style.display = "block";
-    //document.getElementById("overlay").style.display = "block";
-  }
-function closeNav() {
-    document.getElementById("myModal").style.width = "0";
-    document.getElementById("myModal").style.display = "none";
-   // document.getElementById("overlay").style.display = "none";
-}
-</script>
+        function openNav() {
+        document.getElementById("myModal").classList.add('active-popup');
+        //document.getElementById("overlay").style.display = "block";
+      }
+    function closeNav() {
+         document.getElementById("myModal").classList.remove('active-popup')
+       // document.getElementById("overlay").style.display = "none";
+    }
+    </script>
 </body>
 </html>
