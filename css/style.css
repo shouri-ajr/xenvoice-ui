@@ -551,7 +551,8 @@ ul.breadcrumb li a {
  }
  .chat-bubble-left .chat-time,  .chat-bubble-right .chat-time{
      text-align: right;
-     margin-bottom: 10px;
+     margin-bottom: 8px;
+     font-size: 12px;
  }
 
 /*slide popup*/
@@ -571,6 +572,12 @@ ul.breadcrumb li a {
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
   }
+  .form-control-feedback{
+    pointer-events: all;
+  }
+  button:focus {
+    outline: none;
+}
 .active-popup{
     width:auto;
     display: block;
