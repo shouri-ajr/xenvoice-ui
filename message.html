@@ -97,7 +97,7 @@
             </div>
             <div class="col-sm-6 text-right"> 
                 <div class="buy-number-button">
-                <a   data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-md">
+                <a   onclick="openNav()" class="btn btn-primary btn-md">
                     New Message
                 </a> 
                 </div>
@@ -195,12 +195,13 @@
     </div>
         </div><!--/span-->
     </div></div>
+</div>
 <!-- MODAL START-->
-<div class="modal fade table-modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel" id="myModal">
+<div class="modal  table-modal popup" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel" id="myModal" >
     <div class="modal-dialog" role="document">
         <div class="modal-content">
         <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <button type="button" class="close" onclick="closeNav()" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <button type="button" class="minimise" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-minus"></i></span></button>
             <h4 class="modal-title" id="gridSystemModalLabel">New Message</h4>
         </div>
@@ -222,11 +223,21 @@
     </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
     <!-- MODAL END-->
-</div>
+
 
 
 <!-- scripts -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+    function openNav() {
+    document.getElementById("myModal").style.width = "420px";
+    document.getElementById("myModal").style.display = "block";
+    //document.getElementById("overlay").style.display = "block";
+  }
+function closeNav() {
+    document.getElementById("myModal").style.width = "0";
+    document.getElementById("myModal").style.display = "none";
+   // document.getElementById("overlay").style.display = "none";
+}
+</script>
 </body>
 </html>

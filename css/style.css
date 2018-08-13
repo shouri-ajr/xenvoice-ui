@@ -548,16 +548,16 @@ ul.breadcrumb li a {
      text-align: right;
      margin-bottom: 10px;
  }
+
 /*slide popup*/
-sidenav .modal{
-    display: block;
-}
-.sidenav {
+
+.popup {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0;
+    left:auto;  
     right: 0;
     z-index: 3;
     /* background-color: #111;  */
@@ -581,8 +581,7 @@ sidenav .modal{
     right: 0;
     bottom: 0;
     background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-   /* cursor: pointer;  Add a pointer on hover */
+    z-index: 2; 
 }
 /*Video call modal start*/
 #share-field, #invite-field{
