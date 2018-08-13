@@ -575,11 +575,8 @@ ul.breadcrumb li a {
     width:auto;
     display: block;
     margin:15px;
-<<<<<<< HEAD
     transition: all .3s linear;
-=======
     left: auto;
->>>>>>> 0e68bd2d6f6d6914bbfa074980cc401a292d67ed
 }
 .popup-open {
     opacity: 1 !important;
