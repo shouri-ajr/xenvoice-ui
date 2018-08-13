@@ -673,5 +673,6 @@ ul.breadcrumb li a {
 .nopadding{padding:0;}
 .close-icon {visibility:hidden; cursor:pointer;	background: #ffcc00;height: 20px;width: 20px;display: block;text-align: center;line-height: 20px;border-radius: 50%;	position: absolute;right: -10px;top: -10px;} 
 .document-list li:hover .close-icon{ visibility:visible; }
-
+.input-clear {visibility: hidden;position: absolute;right: 40px;z-index: 9;line-height: 32px;width: 30px;text-align: center;cursor: pointer;}
+.input-group:hover .input-clear, .input-group:focus .input-clear {visibility:visible;}
 /*Video call modal end*/
