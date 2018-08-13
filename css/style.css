@@ -235,11 +235,14 @@ ul.breadcrumb li a {
     border-top: none;
 	text-align: center;
 }
+.table-modal .modal-footer.text-right{
+    text-align: right;
+}
 .video-call-modal .modal-footer {
     padding: 10px 20px 20px;
     border-top: none;
 }
-.table-modal .modal-header .close, .video-call-modal .modal-header .close{
+.table-modal .modal-header .close, .video-call-modal .modal-header .close, .modal-header .minimise{
 	font-size: 29px;
     font-weight: normal;
     line-height: 0;
@@ -250,6 +253,12 @@ ul.breadcrumb li a {
     z-index: 1;
     filter: alpha(opacity=40);
     opacity: 0.4;
+}
+.modal-header button.minimise {
+    padding: 4px;
+    margin-right: 40px;
+    background: none;
+    border: none;
 }
 .hr-divider{
 	margin: 34px 0 24px;
