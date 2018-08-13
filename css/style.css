@@ -486,7 +486,12 @@ ul.breadcrumb li a {
 .chat-container{
     padding: 10px;
 }
-
+.send-reply{
+    background: none;
+    box-shadow: none;
+    border: 0;
+    cursor: pointer;
+}
 .chat-container::after{
     content: '';
     display: block;
@@ -557,24 +562,25 @@ ul.breadcrumb li a {
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0;
-    left:auto;  
+    left:auto;
+    opacity: 0;
     right: 0;
     z-index: 3;
+    transition: all .3s linear;
     /* background-color: #111;  */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
+  }
 .active-popup{
     width:auto;
     display: block;
     margin:15px;
+    transition: all .3s linear;
 }
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
+.popup-open {
+    opacity: 1 !important;
+    transition: all .3s linear;
+  }
 #overlay {
     position: fixed; /* Sit on top of the page content */
     display: none; /* Hidden by default */
@@ -584,6 +590,7 @@ ul.breadcrumb li a {
     left: 0;
     right: 0;
     bottom: 0;
+    opacity: 0;
     background-color: rgba(0,0,0,0.5); /* Black background with opacity */
     z-index: 2; 
 }
