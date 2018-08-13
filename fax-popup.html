@@ -9,12 +9,15 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <style>
-  .buy-number-section .input-group .form-control{ width:99%; }
-  .buy-number-section .input-group .form-control:first-child{ border-top-right-radius:4px; border-bottom-right-radius:4px; }
-  .buy-number-section .input-group-addon:last-child{border-top-left-radius:4px; border-bottom-left-radius:4px;}
-  .buy-number-section .input-group-addon:last-child{ border:1px solid #eee;  }
-  .buy-number-section .input-group-addon{ border:1px solid #eee; font-size:20px; cursor:pointer;  }
-  .UplaodSection{background:#eaeaea; border:2px dashed #666; border-radius:5px; padding:40px 0;}
+  .buy-number-section {padding: 15px 0px 5px 0px;}
+  .fax-number-section .input-group .form-control{ width:99%; }
+  .fax-number-section .input-group .form-control:first-child{ border-top-right-radius:4px; border-bottom-right-radius:4px; }
+  .fax-number-section .input-group-addon:last-child{border-top-left-radius:4px; border-bottom-left-radius:4px;}
+  .fax-number-section .input-group-addon:last-child{ border:1px solid #eee;  }
+  .fax-number-section .input-group-addon{ border:1px solid #eee; font-size:20px; cursor:pointer;  }
+  .fax-number-section .form-control {text-indent: 0;}
+  .upload-section{background:transparent; border:2px solid #fafafa; border-radius:5px; padding:40px 0;}
+  .upload-section:hover{background:#fafafa; border:2px dashed #eaeaea;}
   .col-centered{ text-align:center;   float: none;   margin: 0 auto;}
   .col-sm-6.separater {border-right: 1px solid #ccc;min-height: 110px;}
    .btn-bs-file{
@@ -30,16 +33,17 @@
     outline: none;
     cursor: inherit;
 }
-.Document-list{ margin:25px 0 0 0; padding:0; text-align:left; }
-.Document-list li{ text-align:center; display:inline-block;  font-size:10px; min-height:120px; margin:0 15px; }
+.document-list{ margin:25px 0 0 0; padding:0; text-align:left; }
+.document-list li{ text-align:center; display:inline-block;  font-size:12px; min-height:120px; max-width:100px; margin:0 15px; }
 .imageArea img{ max-width:100%; }
-.imageArea{ margin-top:15px; position:relative; height:100px; width:80px; border:1px solid #ccc; border-radius:3px; display:block; transition:all; -moz-transition:0.3s linear; -webkit-transition:0.3s linear; -o-transition:0.3s linear; -ms-transition:0.3s linear;} 
-.Document-list li:hover .imageArea{ border-color:#ffcc00;} 
-.actionTitle{ visibility:hidden; }
-.Document-list li:hover .actionTitle{ visibility:visible; color:#2AA4eb }
+.imageArea{ margin-top:15px; position:relative; height:120px; width:100px; border:1px solid #ccc; border-radius:3px; display:block; transition:all; -moz-transition:0.3s linear; -webkit-transition:0.3s linear; -o-transition:0.3s linear; -ms-transition:0.3s linear;} 
+.document-list li:hover .imageArea{ border-color:#ffcc00;} 
+.action-title{ visibility:hidden; }
+.document-list li:hover .action-title{ visibility:visible; color:#2AA4eb }
 .nopadding{padding:0;}
-.closeIcon {visibility:hidden; cursor:pointer;	background: #ffcc00;height: 20px;width: 20px;display: block;text-align: center;line-height: 20px;border-radius: 50%;	position: absolute;right: -10px;top: -10px;} 
-.Document-list li:hover .closeIcon{ visibility:visible; }
+.close-icon {visibility:hidden; cursor:pointer;	background: #ffcc00;height: 20px;width: 20px;display: block;text-align: center;line-height: 20px;border-radius: 50%;	position: absolute;right: -10px;top: -10px;} 
+.document-list li:hover .close-icon{ visibility:visible; }
+
 </style>
 </head>
 <body>
@@ -112,7 +116,7 @@
                         </ul>
                     </nav>
 					
-    <div class="buy-number-section bg-white">
+    <div class="fax-number-section">
          <div class="col-sm-4">
 				<div class="form-group">
 					<label for="name-field">From</label>
@@ -137,7 +141,7 @@
 				</div>
 			</div>
 			<div class="col-sm-7 col-sm-offset-1">
-					<div class="col-sm-12  col-centered UplaodSection">
+					<div class="col-sm-12  col-centered upload-section">
 						<div class="col-sm-6 separater">
 							<label class="btn-bs-file btn btn-primary">
 								Upload Files
@@ -150,38 +154,38 @@
 						<div class="clearfix"></div>
 					</div>                    
 					<div class="col-sm-12  col-centered nopadding">
-						<ul class="Document-list">
+						<ul class="document-list">
 							<li>
 								<span>AJR-document.pdf</span>
 								<!-- <img src=""> -->
 								<span class="imageArea">
-									<span class="closeIcon">X</span>
+									<span class="close-icon">X</span>
 								</span>
-								<span class="actionTitle">Edit & Signature</span>
+								<span class="action-title">Edit & Signature</span>
 							</li>
 							<li>
 								<span>AJR-document.pdf</span>
 								<!-- <img src=""> -->
 								<span class="imageArea">
-									<span class="closeIcon">X</span>
+									<span class="close-icon">X</span>
 								</span>
-								<span class="actionTitle">Edit & Signature</span>
+								<span class="action-title">Edit & Signature</span>
 							</li>
 							<li>
 								<span>AJR-document.pdf</span>
 								<!-- <img src=""> -->
 								<span class="imageArea">
-									<span class="closeIcon">X</span>
+									<span class="close-icon">X</span>
 								</span>
-								<span class="actionTitle">Edit & Signature</span>
+								<span class="action-title">Edit & Signature</span>
 							</li>
 							<li>
 								<span>AJR-document.pdf</span>
 								<!-- <img src=""> -->
 								<span class="imageArea">
-									<span class="closeIcon">X</span>
+									<span class="close-icon">X</span>
 								</span>
-								<span class="actionTitle">Edit & Signature</span>
+								<span class="action-title">Edit & Signature</span>
 							</li>
 							
 						</ul>
