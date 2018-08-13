@@ -600,7 +600,7 @@ ul.breadcrumb li a {
     color: #888;
 }
 #invite-field + span button.plus-icon{
-    font-size: 30px;
+    font-size: 24px;
     line-height: 20px;
 }
 .invite-someone-text{
@@ -611,11 +611,10 @@ ul.breadcrumb li a {
 .people-tag {
     font-size: 15px;
     color: #777;
-    display: inline-block;
     position: relative;
     padding: 0 32px 0 12px;
     line-height: 26px;
-    margin: 0 0 6px;
+    margin: 0 50px 6px 0;
 }
 .people-tag a {
     font-size: 24px;
