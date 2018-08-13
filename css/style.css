@@ -285,6 +285,9 @@ ul.breadcrumb li a {
     -o-transform: translate(0, -50%);
     transform: translate(0, -50%);
 }
+.modal-dialog{
+ margin:15px 0px;
+}
 .table-modal.modal.in .modal-dialog, .video-call-modal.modal.in .modal-dialog{
     -webkit-transform: translate(-4%, -50%);
     -ms-transform: translate(-4%, -50%);
