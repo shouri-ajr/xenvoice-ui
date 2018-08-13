@@ -538,7 +538,7 @@ ul.breadcrumb li a {
 }
 .chat-bubble-left{
    float: left;
-   width: 90%;
+   max-width: 90%;
 }
 .chat-bubble-right{
     float: right;
