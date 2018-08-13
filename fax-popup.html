@@ -16,7 +16,7 @@
   .fax-number-section .input-group-addon:last-child{ border:1px solid #eee;  }
   .fax-number-section .input-group-addon{ border:1px solid #eee; font-size:20px; cursor:pointer;  }
   .fax-number-section .form-control {text-indent: 0;}
-  .upload-section{background:transparent; border:2px solid #fafafa; border-radius:5px; padding:40px 0;}
+  .upload-section{padding:40px 0; background:transparent; border:2px solid #fafafa; border-radius:5px;}
   .upload-section:hover{background:#fafafa; border:2px dashed #eaeaea;}
   .col-centered{ text-align:center;   float: none;   margin: 0 auto;}
   .col-sm-6.separater {border-right: 1px solid #ccc;min-height: 110px;}
@@ -141,17 +141,20 @@
 				</div>
 			</div>
 			<div class="col-sm-7 col-sm-offset-1">
-					<div class="col-sm-12  col-centered upload-section">
-						<div class="col-sm-6 separater">
-							<label class="btn-bs-file btn btn-primary">
-								Upload Files
-								<input type="file" />
-							</label>
+					<div class="col-sm-12  col-centered">
+					    <div class="upload-section">
+							<div class="col-sm-6 separater">
+								<label class="btn-bs-file btn btn-primary">
+									Upload Files
+									<input type="file" />
+								</label>
+							</div>
+							<div class="col-sm-6">
+								<span>Drop your files Here (.pdg,.jpg,.txt,.tiff)</span>
+							</div>
+							<div class="clearfix"></div>
 						</div>
-						<div class="col-sm-6">
-							<span>Drop your files Here (.pdg,.jpg,.txt,.tiff)</span>
-						</div>
-						<div class="clearfix"></div>
+						
 					</div>                    
 					<div class="col-sm-12  col-centered nopadding">
 						<ul class="document-list">
