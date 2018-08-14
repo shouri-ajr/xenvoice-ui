@@ -142,7 +142,7 @@ span.profile-icon {
     font-size: 11px;
     display: block;
 }
-#search-icon { position: absolute; right:auto; }
+#search-icon {position: absolute;right: auto;top: 7px;left: 10px;}
 .form-control{ text-indent:15px }
 .filter-button{ text-align:center; }
 .filter-button .btn-default, .filter-button .btn-default:hover{ background:transparent; }
