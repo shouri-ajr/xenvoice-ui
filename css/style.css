@@ -688,5 +688,11 @@ ul.breadcrumb li a {
 .document-list li:hover .close-icon{ visibility:visible; }
 .input-clear {visibility: hidden;font-size:24px; color:#777;position: absolute;right: 40px;z-index: 9;line-height: 32px;width: 30px;text-align: center;cursor: pointer;}
 .input-group:hover .input-clear, .input-group:focus .input-clear {visibility:visible;}
-
+.top-bottom-space{padding-top:15px; padding-bottom:15px;}
+.upload-icons-list {margin-top: 15px;display: inline-block;}
+.upload-icons-list .drop-box-icon {background: url(../images/upload-icons.png) no-repeat -80px 0;height: 17px;width: 25px;display: inline-block; cursor:pointer;}
+.upload-icons-list .google-drive-icon {background: url(../images/upload-icons.png) no-repeat -32px 0;height: 17px;width: 25px;display: inline-block; cursor:pointer;}
+.upload-icons-list .one-drive-icon {background: url(../images/upload-icons.png) no-repeat -55px 0;height: 17px;width: 25px;display: inline-block; cursor:pointer;}
+.upload-icons-list .box-icon {background: url(../images/upload-icons.png) no-repeat 0px 0;height: 17px;width: 35px;display: inline-block; cursor:pointer;}
+.upload-icon-grey img{ margin-bottom:10px; cursor:pointer; }
 /*Video call modal end*/
