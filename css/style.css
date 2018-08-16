@@ -38,11 +38,18 @@ a.dropdown-toggle {
   }
 .top-bar-right{
     float: right;
-    transform: translateY(60%);
+    transform: translateY(25%);
 }
 .top-bar-right > li{
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 5px;
+ }
+ .modal-header .close{
+     margin: 0;
+     padding:0;
+ }
+ .top-bar-right .dropdown-toggle::after {
+    vertical-align: 0.1em;
  }
 
 .top-bar-right li a{
@@ -156,6 +163,9 @@ span.profile-icon {
 .filter-button i{
     font-size: 11px;
 }
+.btn-default{
+    border: 1px solid #ced4da;
+}
 .filter-button .btn-default, .filter-button .btn-default:hover{ background:transparent; }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus {
 	color: #000;
@@ -262,10 +272,10 @@ ul.breadcrumb li a {
 	font-size: 20px;
     font-weight: normal;
     line-height: 0;
+    padding: 10px;
     position: absolute;
     right: 0;
     top: 0;
-    padding: 9px 12px;
     z-index: 1;
     filter: alpha(opacity=40);
     opacity: 0.4;
@@ -599,6 +609,9 @@ ul.breadcrumb li a {
 .overly-modal .modal-dialog {
 margin: 0;
 }
+.overly-modal .modal-header {
+    background: none;
+    }
 .overly-modal .modal-contnet{
     box-shadow: none;
 }
