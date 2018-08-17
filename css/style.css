@@ -149,7 +149,11 @@ body{
       }
       .list-group-item.active:hover{
           background-color: rgba(255, 204, 0, 1);
-              }
+     }
+    .input-group>.input-group-prepend>.input-group-text{
+    border-top-right-radius:0.25em !important;
+    border-bottom-right-radius:0.25em !important;
+    }
   /*table*/
   .navbar-inverse{background:#282F39}
   .table > thead > tr > th {border-bottom: none;background: none;}
